@@ -12,8 +12,6 @@ def ret_ascii(c):
 	return(ord(c))
 
 def div(x, y):
-	if x == 0:
-		return(0)
 
 
 
