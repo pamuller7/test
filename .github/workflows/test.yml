@@ -3,9 +3,9 @@ name: Test Python before push
 # Déclenche le workflow à chaque push ou pull request sur la branche main
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
   unittest:
@@ -22,6 +22,5 @@ jobs:
         with:
           python-version: "3.11"
 
-      # 3️⃣ Lancer les tests avec unittest
-      - name: Run unittest
-        run: python3 -m unittest discover -s tests
+      - name: Run tests
+        run: python3 -m unittest test.py
