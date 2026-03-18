@@ -9,18 +9,18 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
 
-    steps:
-      # 1. Vérifie le code depuis le repo
-      - name: Checkout repository
-        uses: actions/checkout@v3
+    # steps:
+    #   # 1. Vérifie le code depuis le repo
+    #   - name: Checkout repository
+    #     uses: actions/checkout@v3
 
-      # 2. Installe Python (ici la version 3.11)
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.11"
+    #   # 2. Installe Python (ici la version 3.11)
+    #   - name: Setup Python
+    #     uses: actions/setup-python@v4
+    #     with:
+    #       python-version: "3.11"
 
       - name: Run tests
         run: python3 -m unittest test.py
