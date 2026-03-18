@@ -24,4 +24,4 @@ jobs:
 
       # 3️⃣ Lancer les tests avec unittest
       - name: Run unittest
-        run: python3 -m unittest test.py
+        run: python3 -m unittest discover -s tests
