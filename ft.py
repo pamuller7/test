@@ -13,7 +13,10 @@ def ret_ascii(c):
 
 def div(x, y):
 	if x == 0:
-		return (0)
+		return(0)
+
+
+
 	return (x / y)
 
 
