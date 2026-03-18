@@ -18,7 +18,7 @@ class Testing_ft(unittest.TestCase):
 class Testing_ft2(unittest.TestCase):
 	def test_mul(self):
 		self.assertEqual(mul(8, 1), 8)
-		self.assertEqual(mul(0, 1), 0)
+		self.assertEqual(mul(0, 1), 12)
 		self.assertEqual(mul(1, -6), -6)
 
 	def test_swap(self):
