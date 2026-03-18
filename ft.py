@@ -10,3 +10,6 @@ def swap(x, y):
 
 def ret_ascii(c):
 	return(ord(c))
+
+def div(x, y):
+	return (x / y)

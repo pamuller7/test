@@ -1,4 +1,4 @@
-from ft import mul, swap, ret_ascii
+from ft import mul, swap, ret_ascii, div
 import unittest
 
 class Testing_ft(unittest.TestCase):
@@ -28,6 +28,10 @@ class Testing_ft2(unittest.TestCase):
 	def test_ret_ascii(self):
 		self.assertEqual(ret_ascii('a'), 97)
 		self.assertEqual(ret_ascii('0'), 48)
+
+	def test_div(self):
+		self.assertEqual(div(4,2), 2)
+		self.assertEqual(div(4, 0), 0)
 
 # if __name__ == '__main__':
 # 	unittest.main()
